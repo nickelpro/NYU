@@ -1,0 +1,115 @@
+1)
+  a) 
+  output: 
+    [1, 2, 3, 4, 5]
+  globals: 
+    lst: [1, 2, 3, 4, 5]
+    lst2: [1, 2, 3 , 4, 5]
+
+  b) 
+  output: 
+    ABC
+    abc
+  globals:
+    s: "ABC"
+    t: "abc"
+
+  c)
+  output:
+    Inside func s = ABC
+    abc
+  globals:
+    s: 'abc'
+  locals:
+    func:
+      s: 'ABC'
+
+d)
+  output:
+    Inside func lst = [5, 6, 7, 8]
+    [1, 2, 3, 4]
+  globals:
+    lst: [1, 2, 3, 4]
+  locals:
+    func:
+      lst: [5, 6, 7, 8]
+  
+2)
+  [1, 1, 1, 1, 1, 1]
+  ['n', 'y', 'E', 'a', 's']
+  [8, 1, 0, -1, -8, -27, -64]
+
+3)
+  peter:
+    name: 16
+    age: 16
+    courses: []
+  output:
+    16 16
+
+  peter:
+    name: 'Peter Parker'
+    age: 18
+    courses: []
+  output:
+    Peter Parker 18
+
+  peter:
+    name: 'student'
+    age: 16
+    courses: []
+  output:
+    student 16
+
+  peter:
+    name: 'Peter Parker'
+    age: 16
+    courses: []
+  output:
+    Name: Peter Parker
+    Age: 16
+    Courses: 
+
+  peter:
+    name: 'Peter Parker'
+    age: 16
+    courses: ['Algebra', 'Chemistry']
+  output:
+    Name: Peter Parker
+    Age: 16
+    Courses: Algebra, Chemistry
+  
+  peter:
+    name: 'Peter Parker'
+    age: 16
+    courses: ['Algebra', 'Chemistry', 'Physics']
+  output:
+    Course Not Found: Spanish
+  
+  peter:
+    name: 'Peter Parker'
+    age: 16
+    courses: ['Algebra', 'Physics', 'Economics]
+  tom:
+    name: 'Tom Holland'
+    age: 18
+    courses: ['Algebra', 'Physics', 'Economics]
+  output:
+    Removed Course: Chemistry
+    ['Algebra', 'Physics', 'Economics]
+    ['Algebra', 'Physics', 'Economics]
+
+  peter:
+    name: 'Tom Holland'
+    age: 16
+    courses: ['Algebra', 'Physics', 'Economics]
+  tom:
+    name: 'Peter Parker'
+    age: 18
+    courses: ['Algebra', 'Physics', 'Economics]
+  output:
+    Tom Holland Peter Parker
+    Peter Parker 18
+    
+
+  
